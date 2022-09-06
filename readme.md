@@ -39,3 +39,6 @@ How to check if you're the owner of the file:
 def ismine(path):
     return pwd.getpwuid(os.stat(path).st_uid).pw_name == os.getlogin()
 `
+
+
+os.path.getmtime(path)
