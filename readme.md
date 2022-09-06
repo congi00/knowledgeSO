@@ -1,5 +1,6 @@
 # C
 `gcc hello.c -o hello`
+
 `./hello`
 
 argc parte da 1 => argv[0] è il nome del programma stesso
@@ -35,6 +36,7 @@ for (dirpath, dirnames, filenames) in os.walk(path): #how to access a path with 
 					
 
 How to check if you're the owner of the file:
+
 `
 def ismine(path):
     return pwd.getpwuid(os.stat(path).st_uid).pw_name == os.getlogin()
